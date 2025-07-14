@@ -35,6 +35,7 @@
     <div class="hero-flex">
       <div class="hero-content">
         <h1 class="hero-title">Hi, I'm Grace</h1>
+        <span class="typing-effect" id="typing-effect"></span>
         <h2 class="hero-subtitle">Aspiring Developer | Creative Coder | Girl in Tech</h2>
         <p class="hero-description">
           Passionate about creating beautiful, functional websites and apps. This site will grow as I do—stay tuned for more projects and updates!
@@ -42,6 +43,17 @@
         <div class="hero-buttons">
           <a href="#projects" class="btn btn-primary">View My Work</a>
           <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+        <!-- Tech Stack Timeline (centered, smaller) -->
+        <div class="tech-stack-timeline centered-tech-stack">
+          <span class="tech-icon" title="HTML5"><i class="fab fa-html5"></i></span>
+          <span class="tech-icon" title="CSS3"><i class="fab fa-css3-alt"></i></span>
+          <span class="tech-icon" title="JavaScript"><i class="fab fa-js-square"></i></span>
+          <span class="tech-icon" title="React"><i class="fab fa-react"></i></span>
+          <span class="tech-icon" title="Node.js"><i class="fab fa-node-js"></i></span>
+          <span class="tech-icon" title="Python"><i class="fab fa-python"></i></span>
+          <span class="tech-icon" title="Git"><i class="fab fa-git-alt"></i></span>
+          <span class="tech-icon" title="GitHub"><i class="fab fa-github"></i></span>
         </div>
       </div>
       <div class="hero-image">
@@ -75,6 +87,9 @@
             <p>Technologies</p>
           </div>
         </div>
+        <!-- Fun Fact Easter Egg -->
+        <button id="fun-fact-btn" class="btn btn-secondary" style="margin-top:18px;">Show Fun Fact</button>
+        <div id="fun-fact" class="fun-fact">I built my first website before I could drive a car!</div>
       </div>
       <div class="about-image">
         <img src="myimage/WhatsApp Image 2025-07-14 at 12.30.02 AM.jpeg" alt="My Photo" class="profile-img">
@@ -210,6 +225,7 @@
     </div>
   </footer>
 
+  <button class="hire-me-btn" onclick="window.location.href='#contact'">Hire Me</button>
   <script src="script.js"></script>
 </body>
 </html> 
