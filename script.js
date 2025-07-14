@@ -162,16 +162,6 @@ function revealSectionsOnScroll() {
 window.addEventListener('scroll', revealSectionsOnScroll);
 document.addEventListener('DOMContentLoaded', revealSectionsOnScroll);
 
-// Fun fact easter egg toggle
-const funFactBtn = document.getElementById('fun-fact-btn');
-const funFactDiv = document.getElementById('fun-fact');
-if (funFactBtn && funFactDiv) {
-  funFactBtn.addEventListener('click', () => {
-    funFactDiv.classList.toggle('show-fun-fact');
-    funFactBtn.textContent = funFactDiv.classList.contains('show-fun-fact') ? 'Hide Fun Fact' : 'Show Fun Fact';
-  });
-}
-
 // Project card hover effects
 document.querySelectorAll('.project-card').forEach(card => {
     card.addEventListener('mouseenter', function() {
@@ -286,3 +276,45 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style); 
+
+// Auto-scroll for projects carousel on mobile
+function autoScrollProjectsCarousel() {
+  const carousel = document.querySelector('.projects-carousel');
+  const grid = document.querySelector('.projects-grid');
+  if (!carousel || !grid) return;
+  const cards = grid.querySelectorAll('.project-card');
+  if (cards.length < 2) return;
+  let current = 0;
+  let interval = null;
+
+  function scrollToCard(idx) {
+    const card = cards[idx];
+    if (card) {
+      card.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    }
+  }
+
+  function startAutoScroll() {
+    interval = setInterval(() => {
+      current = (current + 1) % cards.length;
+      scrollToCard(current);
+    }, 5000);
+  }
+
+  function stopAutoScroll() {
+    if (interval) clearInterval(interval);
+  }
+
+  // Pause auto-scroll on user interaction
+  carousel.addEventListener('touchstart', stopAutoScroll);
+  carousel.addEventListener('mousedown', stopAutoScroll);
+  carousel.addEventListener('touchend', startAutoScroll);
+  carousel.addEventListener('mouseup', startAutoScroll);
+
+  startAutoScroll();
+}
+
+// Only run on mobile
+if (window.innerWidth <= 600) {
+  document.addEventListener('DOMContentLoaded', autoScrollProjectsCarousel);
+} 

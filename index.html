@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -73,23 +73,29 @@
         <p>
           When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community. I believe in continuous learning and staying updated with the latest industry trends.
         </p>
-        <div class="about-stats">
-          <div class="stat">
-            <h3>2+</h3>
-            <p>Years Experience</p>
+        <div class="about-stats-simple">
+          <div class="about-stat-card">
+            <span class="about-stat-icon"><i class="fas fa-user-clock"></i></span>
+            <div>
+              <div class="about-stat-number">2+</div>
+              <div class="about-stat-label">Years of Experience</div>
+            </div>
           </div>
-          <div class="stat">
-            <h3>15+</h3>
-            <p>Projects Completed</p>
+          <div class="about-stat-card">
+            <span class="about-stat-icon"><i class="fas fa-tasks"></i></span>
+            <div>
+              <div class="about-stat-number">15+</div>
+              <div class="about-stat-label">Projects Completed</div>
+            </div>
           </div>
-          <div class="stat">
-            <h3>5+</h3>
-            <p>Technologies</p>
+          <div class="about-stat-card">
+            <span class="about-stat-icon"><i class="fas fa-code"></i></span>
+            <div>
+              <div class="about-stat-number">10+</div>
+              <div class="about-stat-label">Technologies</div>
+            </div>
           </div>
         </div>
-        <!-- Fun Fact Easter Egg -->
-        <button id="fun-fact-btn" class="btn btn-secondary" style="margin-top:18px;">Show Fun Fact</button>
-        <div id="fun-fact" class="fun-fact">I built my first website before I could drive a car!</div>
       </div>
       <div class="about-image">
         <img src="myimage/WhatsApp Image 2025-07-14 at 12.30.02 AM.jpeg" alt="My Photo" class="profile-img">
@@ -134,52 +140,54 @@
   <!-- Projects Section -->
   <section id="projects" class="section-card">
     <h2 class="section-title">Featured Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <div class="project-image">
-          <div class="project-placeholder"><i class="fas fa-laptop-code"></i></div>
-        </div>
-        <div class="project-content">
-          <h3>E-Commerce Platform</h3>
-          <p>A full-stack e-commerce application built with React, Node.js, and MongoDB. Features include user authentication, product management, and payment integration.</p>
-          <div class="project-tech">
-            <span>React</span><span>Node.js</span><span>MongoDB</span>
+    <div class="projects-carousel">
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fas fa-laptop-code"></i></div>
           </div>
-          <div class="project-links">
-            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
-          </div>
-        </div>
-      </div>
-      <div class="project-card">
-        <div class="project-image">
-          <div class="project-placeholder"><i class="fas fa-mobile-alt"></i></div>
-        </div>
-        <div class="project-content">
-          <h3>Task Management App</h3>
-          <p>A responsive task management application with drag-and-drop functionality, real-time updates, and team collaboration features.</p>
-          <div class="project-tech">
-            <span>JavaScript</span><span>HTML5</span><span>CSS3</span>
-          </div>
-          <div class="project-links">
-            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+          <div class="project-content">
+            <h3>E-Commerce Platform</h3>
+            <p>A full-stack e-commerce application built with React, Node.js, and MongoDB. Features include user authentication, product management, and payment integration.</p>
+            <div class="project-tech">
+              <span>React</span><span>Node.js</span><span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="project-card">
-        <div class="project-image">
-          <div class="project-placeholder"><i class="fas fa-chart-line"></i></div>
-        </div>
-        <div class="project-content">
-          <h3>Data Analytics Dashboard</h3>
-          <p>An interactive dashboard for data visualization and analytics, featuring charts, graphs, and real-time data processing capabilities.</p>
-          <div class="project-tech">
-            <span>Python</span><span>Django</span><span>Chart.js</span>
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fas fa-mobile-alt"></i></div>
           </div>
-          <div class="project-links">
-            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+          <div class="project-content">
+            <h3>Task Management App</h3>
+            <p>A responsive task management application with drag-and-drop functionality, real-time updates, and team collaboration features.</p>
+            <div class="project-tech">
+              <span>JavaScript</span><span>HTML5</span><span>CSS3</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-placeholder"><i class="fas fa-chart-line"></i></div>
+          </div>
+          <div class="project-content">
+            <h3>Data Analytics Dashboard</h3>
+            <p>An interactive dashboard for data visualization and analytics, featuring charts, graphs, and real-time data processing capabilities.</p>
+            <div class="project-tech">
+              <span>Python</span><span>Django</span><span>Chart.js</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
           </div>
         </div>
       </div>
