@@ -128,6 +128,50 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// Typing effect for hero section
+function typeWriterEffect(element, text, speed = 70) {
+  let i = 0;
+  function type() {
+    if (i < text.length) {
+      element.textContent += text.charAt(i);
+      i++;
+      setTimeout(type, speed);
+    }
+  }
+  element.textContent = '';
+  type();
+}
+document.addEventListener('DOMContentLoaded', () => {
+  const typingEl = document.getElementById('typing-effect');
+  if (typingEl) {
+    typeWriterEffect(typingEl, "Hello, World! I'm a developer.", 70);
+  }
+});
+
+// Section fade-in/slide-in animation
+function revealSectionsOnScroll() {
+  const sections = document.querySelectorAll('.section-card, .hero, .about-flex, .skills-grid, .projects-grid, .contact-flex');
+  const windowHeight = window.innerHeight;
+  sections.forEach(section => {
+    const sectionTop = section.getBoundingClientRect().top;
+    if (sectionTop < windowHeight - 60) {
+      section.classList.add('section-visible');
+    }
+  });
+}
+window.addEventListener('scroll', revealSectionsOnScroll);
+document.addEventListener('DOMContentLoaded', revealSectionsOnScroll);
+
+// Fun fact easter egg toggle
+const funFactBtn = document.getElementById('fun-fact-btn');
+const funFactDiv = document.getElementById('fun-fact');
+if (funFactBtn && funFactDiv) {
+  funFactBtn.addEventListener('click', () => {
+    funFactDiv.classList.toggle('show-fun-fact');
+    funFactBtn.textContent = funFactDiv.classList.contains('show-fun-fact') ? 'Hide Fun Fact' : 'Show Fun Fact';
+  });
+}
+
 // Project card hover effects
 document.querySelectorAll('.project-card').forEach(card => {
     card.addEventListener('mouseenter', function() {
