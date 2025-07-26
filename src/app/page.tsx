@@ -51,7 +51,7 @@ export default function Home() {
                 href="#contact" 
                 className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-8 py-4 rounded-full font-semibold hover:from-purple-700 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover-lift"
               >
-                Let's Build Something
+                Let&apos;s Build Something
               </a>
               <a 
                 href="#projects" 
@@ -73,7 +73,7 @@ export default function Home() {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto mb-8 animate-gradient"></div>
             <p className="text-xl text-gray-600 leading-relaxed">
-              I'm a passionate software developer with expertise in modern web technologies. 
+              I&apos;m a passionate software developer with expertise in modern web technologies. 
               I specialize in building scalable, performant applications that solve real-world problems. 
               With a strong foundation in both frontend and backend development, I create seamless 
               digital experiences that users love.
@@ -119,7 +119,7 @@ export default function Home() {
                     <span>95%</span>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full progress-animate" style={{width: '95%', '--progress-width': '95%'}}></div>
+                    <div className="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full progress-animate" style={{width: '95%'}}></div>
                   </div>
                 </div>
                 <div>
@@ -128,7 +128,7 @@ export default function Home() {
                     <span>90%</span>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full progress-animate" style={{width: '90%', '--progress-width': '90%'}}></div>
+                    <div className="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full progress-animate" style={{width: '90%'}}></div>
                   </div>
                 </div>
                 <div>
@@ -137,7 +137,7 @@ export default function Home() {
                     <span>85%</span>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full progress-animate" style={{width: '85%', '--progress-width': '85%'}}></div>
+                    <div className="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full progress-animate" style={{width: '85%'}}></div>
                   </div>
                 </div>
                 <div>
@@ -146,7 +146,7 @@ export default function Home() {
                     <span>90%</span>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full progress-animate" style={{width: '90%', '--progress-width': '90%'}}></div>
+                    <div className="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full progress-animate" style={{width: '90%'}}></div>
                   </div>
                 </div>
               </div>
@@ -162,7 +162,7 @@ export default function Home() {
                     <span>88%</span>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full progress-animate" style={{width: '88%', '--progress-width': '88%'}}></div>
+                    <div className="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full progress-animate" style={{width: '88%'}}></div>
                   </div>
                 </div>
                 <div>
@@ -171,7 +171,7 @@ export default function Home() {
                     <span>80%</span>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full progress-animate" style={{width: '80%', '--progress-width': '80%'}}></div>
+                    <div className="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full progress-animate" style={{width: '80%'}}></div>
                   </div>
                 </div>
                 <div>
@@ -180,7 +180,7 @@ export default function Home() {
                     <span>85%</span>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full progress-animate" style={{width: '85%', '--progress-width': '85%'}}></div>
+                    <div className="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full progress-animate" style={{width: '85%'}}></div>
                   </div>
                 </div>
                 <div>
@@ -189,7 +189,7 @@ export default function Home() {
                     <span>75%</span>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full progress-animate" style={{width: '75%', '--progress-width': '75%'}}></div>
+                    <div className="bg-gradient-to-r from-purple-600 to-pink-600 h-2 rounded-full progress-animate" style={{width: '75%'}}></div>
                   </div>
                 </div>
               </div>
@@ -279,11 +279,11 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 animate-fade-in">Let's Work Together</h2>
+                      <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 animate-fade-in">Let&apos;s Work Together</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-pink-600 mx-auto mb-12 animate-gradient"></div>
           
           <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto stagger-1">
-            I'm always open to discussing new opportunities, exciting projects, and innovative ideas.
+            I&apos;m always open to discussing new opportunities, exciting projects, and innovative ideas.
           </p>
           
           <div className="grid md:grid-cols-2 gap-8 mb-12">
